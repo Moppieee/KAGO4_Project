@@ -2,7 +2,9 @@ package my_project.control;
 
 import KAGO_framework.control.ViewController;
 import my_project.model.Ball;
+import my_project.model.Cloud;
 import my_project.model.House;
+import my_project.model.flooooor;
 
 /**
  * Ein Objekt der Klasse ProgramController dient dazu das Programm zu steuern. Die updateProgram - Methode wird
@@ -38,6 +40,19 @@ public class ProgramController {
 
         House house1 = new House();
         viewController.draw(house1);
+
+        Cloud c1 = new Cloud(100,50,40);
+        viewController.draw(c1);
+
+        Cloud c2 = new Cloud(400,80,50);
+        viewController.draw(c2);
+
+        Cloud c3 = new Cloud(300,10,20);
+        viewController.draw(c3);
+
+
+        flooooor f1 = new flooooor(0,0,0);
+        viewController.draw(f1);
 
     }
 
