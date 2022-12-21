@@ -39,8 +39,13 @@ public class Ball extends GraphicalObject {
      * @param dt die Sekunden, die seit dem letzten Aufruf von update vergangen sind
      */
     @Override
-    public void update(double dt){
 
+    public void update(double dt){
+        //update und so i guess
+        x = x +3330*dt;
+        if ( x > 800){
+            x = -200;
+        }
     }
 
 }

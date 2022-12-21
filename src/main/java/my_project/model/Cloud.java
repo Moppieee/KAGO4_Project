@@ -27,4 +27,12 @@ public class Cloud extends GraphicalObject {
     drawTool.drawFilledCircle(x+radius/2,y+radius/2,radius);
     drawTool.drawFilledCircle(x+radius,y,radius);
     }
+
+    public void update(double dt){
+       //update und so i guess
+        x = x +30*dt;
+        if ( x > 800){
+            x = -200;
+        }
+    }
 }
